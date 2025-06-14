@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-06-14 18:17:41.174449",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "section_break_v9zf",
+  "first_name",
+  "full_name",
+  "column_break_h1uc",
+  "last_name",
+  "section_break_gh9y",
+  "date_of_birth",
+  "phone",
+  "column_break_mksu",
+  "gender",
+  "section_break_knj5",
+  "role",
+  "role_name",
+  "department_name",
+  "column_break_t9yw"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Staff ID",
+   "options": "STAFF.######"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of birth"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Link",
+   "label": "Role",
+   "options": "Staff Roles"
+  },
+  {
+   "fetch_from": "role.role_name",
+   "fieldname": "role_name",
+   "fieldtype": "Read Only",
+   "label": "Role Name"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "department_name",
+   "fieldtype": "Read Only",
+   "label": "Department Name"
+  },
+  {
+   "fieldname": "section_break_v9zf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_gh9y",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_h1uc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mksu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_knj5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_t9yw",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-14 18:25:50.553205",
+ "modified_by": "Administrator",
+ "module": "User Management",
+ "name": "Staff",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
